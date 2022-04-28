@@ -1,0 +1,160 @@
+@import '@/layouts/variaveis.scss';
+
+.cont{
+  border: 0;
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  height: auto;
+  min-height: 100%;
+} 
+
+.principal{
+  background-color: #E5E5E5;
+  top: $alturaHeader;
+  bottom: $alturaFooter;
+  display: flex;
+  min-height: calc(100vh - $alturaHeader - $alturaFooter );
+  width: 100vw;
+  max-width: 100vw;
+  min-width: 100vw;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.base{
+  background-color: $background-color-component;
+  width: auto;
+  height: auto;
+  min-width: 70%;
+  min-height: 60vh;
+  padding: 2rem;
+  max-width: 80%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.tabela_titulo{
+  font-size: 15px;
+  border:1px solid black;
+}
+
+h1{
+  margin-bottom: 2%;
+}
+
+table, th, td {
+  border:1px solid rgb(208, 208, 208);
+}
+
+.tit1{
+  width:29vh;
+  height: 10%;
+  padding: auto;
+}
+
+.tit2{
+  width:37vh;
+  height: 10%;
+  padding: auto;
+}
+
+.tit3{
+  width:36vh;
+  height: 10%;
+  padding: auto;
+}
+
+.tit4{
+  width:36vh;
+  height: 10%;
+  padding: auto;
+}
+
+.tit5{
+  width:21vh;
+  height: 10%;
+  padding: auto;
+}
+
+.lin1{
+  width:16vh;
+  height: 5%;
+  padding: 0;
+  margin: 1px;
+  font-size: 12px;
+}
+
+.lin2{
+  width:20vh;
+  height: 5%;
+  padding: 0;
+  margin: 1px;
+  font-size: 12px;
+}
+
+.lin3{
+  width:20vh;
+  height: 5%;
+  padding: 0;
+  margin: 1px;
+  font-size: 12px;
+}
+
+.lin4{
+  width:20vh;
+  height: 5%;
+  padding: 0;
+  margin: 1px;
+  font-size: 12px;
+}
+
+.lin5{
+  width:11vh;
+  height: 5%;
+  padding: 0;
+  margin: 1px;
+  font-size: 12px;
+}
+
+.prod_tab:hover{
+  background-color: hsl(0, 24%, 96%);
+  cursor: pointer;
+}
+
+.selected{
+  background-color: rgb(128, 122, 122) !important;
+}
+
+.pagination{
+  display: inline-block;
+  width: auto;
+  height: 30px;
+  position: relative;
+	bottom: 0;
+  right: 40%;
+  margin-top: 40%;
+}
+
+.pagination a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+.btn_disable{
+  display: none;
+}
+
+.p-button-danger{
+  display: flex;
+  justify-content: end;
+}
+
+
+

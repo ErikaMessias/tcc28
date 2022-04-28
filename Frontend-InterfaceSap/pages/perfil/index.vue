@@ -1,0 +1,37 @@
+<template>
+  <div class="cont">
+    <div class="page">
+      <div class="base">
+        <div class="titulo">
+          <h1>Historico</h1>
+          <hr />
+        </div>
+        <div class="cards">
+          <div class="card-one c">
+            <h1>Sucata</h1>
+            <img src="/sucata.png" />
+            <NuxtLink class="btn-ir" to="/hist_sucata">Selecionar</NuxtLink>
+          </div>
+
+          <div class="card-two c">
+            <h1>Produtos</h1>
+            <img src="/produto.png" />
+            <NuxtLink class="btn-ir" to="/hist_produto">Selecionar</NuxtLink>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'trancoes',
+  layout: 'standard',
+  middleware: 'auth',
+}
+</script>
+
+<style lang="scss" scoped>
+@import '@/pages/transacoes/transacoes.scss';
+</style>
